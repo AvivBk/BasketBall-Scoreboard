@@ -1,0 +1,54 @@
+<html>
+     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+          <link rel="stylesheet" href="board.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet" >
+    </head>
+      <body>
+          <div class="m-container" style="display: flex; justify-content: space-around">
+   <div>
+       <div class="h-container">
+      <div class="home-bg">
+        <h1>HOME</h1>
+        <div class="home-score">
+             <fieldset id = "h-fieldset" >
+          <h2 id="h-score" class="home h-score">0</h2>
+           </fieldset>
+        </div>
+        <div class="btn-div" style="display: flex; justify-content: space-around">
+        <button class="btn-score h-btn1" onclick="onClick_hbtn1()">+1</button>
+        <button class="btn-score h-btn2" onclick="onClick_hbtn2()">+2</button>
+        <button class="btn-score h-btn3" onclick="onClick_hbtn3()">+3</button>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div>
+       
+       
+   </div>
+  <div>
+    <div class="g-container">
+      <div class="guest-bg">
+        <h1>GUSET</h1>
+        <div class="guset-score">
+             <fieldset id="g-fieldset">
+          <h2 id="g-score" class="guset g-score">0</h2>
+             </fieldset>
+        </div>
+        <div class="btn-div" style="display: flex; justify-content: space-around">
+        <button class="btn-score g-btn1" onclick="onClick_gbtn1()">+1</button>
+        <button class="btn-score g-btn2" onclick="onClick_gbtn2()">+2</button>
+        <button class="btn-score g-btn3" onclick="onClick_gbtn3()">+3</button>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+    <div class="bottom-container" id="bot-container" style="display: flex; justify-content: space-around">
+      <button class="bot-btn rest-btn" id="rest-btn" onclick="onClick_new_btn()">New Game</button>
+ 
+  <button class="bot-btn end-btn" id="end-btn" onclick="onClick_end_btn()">End Game</button>
+  </div>
+    <script src="board.js"></script>
+      </body>
+</html>
